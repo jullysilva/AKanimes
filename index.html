@@ -5,50 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 
-
-    <style>
-        nav{
-            text-transform: uppercase;
-        }
-        .content {
-            max-height: 80%;
-            padding: 5% 15% 2% 15%;
-            background: #440732;
-        }
-        .coment {
-            max-height: 20%;
-            padding: 0 20% 2% 20%;
-            background: #440732;
-            color: white;
-        }
-    </style>
 </head>
 <body>
 
-    <div class="container-fluid">
+    <div>
         <!-- MENU -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
-            <a class="navbar-brand" href="#">
-                <img src="img/noragami.png" alt="" srcset="" width="55px">
+        <nav class="navbar navbar-expand-lg justify-content-center navbar navbar-dark">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/noragami.png" alt="" srcset="" class="img-p">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon icon-nav"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="#">home</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="#">notícias</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="#">Contato</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="#">sobre</a>
                     </li>
                 </ul>
@@ -76,11 +60,6 @@
                         <div class="card p-3">
                             <blockquote class="blockquote mb-0 card-body">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                                <footer class="blockquote-footer">
-                                    <small class="text-muted">
-                                        Someone famous in <cite title="Source Title">Source Title</cite>
-                                    </small>
-                                </footer>
                             </blockquote>
                         </div>
                         <div class="card">
@@ -94,11 +73,6 @@
                         <div class="card bg-primary text-white text-center p-3">
                             <blockquote class="blockquote mb-0">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
-                                <footer class="blockquote-footer text-white">
-                                    <small>
-                                        Someone famous in <cite title="Source Title">Source Title</cite>
-                                    </small>
-                                </footer>
                             </blockquote>
                         </div>
                         <div class="card text-center">
@@ -114,11 +88,6 @@
                         <div class="card p-3 text-right">
                             <blockquote class="blockquote mb-0">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                                <footer class="blockquote-footer">
-                                    <small class="text-muted">
-                                        Someone famous in <cite title="Source Title">Source Title</cite>
-                                    </small>
-                                </footer>
                             </blockquote>
                         </div>
                         <div class="card">
@@ -134,7 +103,7 @@
         </div>
 
         <!-- COMENTÁRIO  -->
-        <div class="coment">
+        <section class="coment">
             <form id="form">
                 <div class="form-group">
                     <label for="exampleFormControlInput1">Nome de usuário</label>
@@ -147,12 +116,81 @@
                 <button type="submit" id="button1" class="btn btn-primary">Comentar</button>
             </form>
 
-        </div>
+        </section>
+
+        <!-- POSTS DOS COMENTÁRIOS FEITOS -->
+        <section class="posts-coment">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="media">
+                                <img class="align-self-start mr-3 img-p" src="img/user.png" alt="Generic placeholder image">
+                                <div class="media-body">
+                                  <h5 class="mt-0" style="color: black;" id="name">Top-aligned media</h5>
+                                  <p id="texto">Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                                </div>
+                        </div>
+                                    
+                    </div>
+                </div>
+        </section>
+
+
+
+        <!-- FOOTER / RODAPÉ -->
+        <footer class="rodape">
+            <div class="row align-items-center" style="margin-right: 0%;">
+
+                <div class="col-md-5">
+                    <div>
+                           <img src="img/noragami.png" alt="" sizes="" srcset="" class="rounded-circle img-p" style="float: left;">
+                           <p>Olá tudo bem? Meu nome Jully Silva, Estudante de Engenharia de Software. Muitos olham e não percebem que sou uma Otaku sem precedentes, tudo bem não me importo, para falar a verdade acho até divertido.</p> 
+                    </div>
+                </div>
+
+
+                <div class="col-md-2">
+                        <p class="text-justify">Venha participar desta equipe de Otakus e poste suas notícias, opiniões sobre o que acontece no mundo de animes e mangás. </p>
+                </div>
+
+                <div class="col-md-1">
+                    <ul class="fa-ul">
+                        <li><a href="#"><i class="fa-li fa fa-home"></i>Home</li></a>
+                        <li><a href="#"><i class="fa-li fa fa-newspaper-o"></i>Notícias</li></a>
+                        <li><a href="#"><i class="fa-li fa fa-envelope"></i>Contato</li></a>
+                        <li><a href="#"><i class="fa-li fa fa-info-circle"></i>Sobre</li></a>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="row">
+
+                            <div class="col-md-6 ">
+                                    <ul class="fa-ul pl-5 pr-0">
+                                        <li><a href="#"><i class="fa-li fa fa-facebook fa-fw fa-lg"></i>Facebook</a></li>
+                                        <li><a href="#"><i class="fa-li fa fa-instagram fa-fw fa-lg"> </i>Instagram</a></li>
+                                        <li><a href="#"><i class="fa-li fa fa-twitter fa-fw fa-lg"></i>Twitter</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="fa-ul">
+                                        <li><a href="#"><i class="fa-li fa fa-github fa-lg"></i>Github</a></li>
+                                        <li><a href="#"><i class="fa-li fa fa-whatsapp fa-lg"></i>Whatsapp</a></li>
+                                        <li><a href="#"><i class="fa-li fa fa-youtube fa-lg"></i>Youtube</a></li>
+                                    </ul>
+                                </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </footer>
 
     </div>
 
     
-
+    
+    
+    <script src="https://use.fontawesome.com/945e93a52c.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

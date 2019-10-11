@@ -1,0 +1,63 @@
+body{
+    background: url('../img/fundo.jpg') no-repeat fixed;
+    background-size: 100% 100%;
+    width: 100%;
+}
+
+nav, footer{
+    color: white;
+    text-transform: uppercase;
+    background: #1b5dad;
+}
+.content {
+    max-height: 80%;
+    padding: 5% 15% 2% 15%;
+
+}
+.posts-coment{
+
+    padding: 2% 20% 2% 20%;
+    color: white;   
+}
+.coment {
+    max-height: 20%;
+    padding: 2% 20% 2% 20%;
+    background: #1b5dad;
+    color: white;
+}
+
+.rodape{
+    padding: 2% 0 2% 1%; 
+    text-transform: none;   
+}
+
+.news{
+    display: inline; 
+}
+
+.img-p{
+    width: 55px;
+}
+
+
+nav i{
+     color: #28a745;
+}
+
+li{
+    padding-bottom: 2%;
+}
+.externas li{
+    padding-bottom: 10%;
+    align-content: center;
+}
+
+li a{
+    color: white;
+    
+}
+
+li a:hover{
+    text-decoration: none;
+    color: rgb(163, 8, 163);
+}
