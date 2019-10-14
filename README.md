@@ -1,6 +1,6 @@
 ## Link para acesso ao AKanimes
 
-(https://jullysilva.github.io/AKanimes/)
+https://jullysilva.github.io/AKanimes/
 
 You can use the [editor on GitHub](https://github.com/jullysilva/AKanimes/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
