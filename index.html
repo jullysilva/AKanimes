@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,8 @@
     <title>Document</title>
 
 </head>
-<body>
+
+<body onload="readComent()">
 
     <div>
         <!-- MENU -->
@@ -17,7 +19,8 @@
             <a class="navbar-brand" href="index.html">
                 <img src="img/noragami.png" alt="" srcset="" class="img-p">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon icon-nav"></span>
             </button>
 
@@ -38,69 +41,14 @@
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Naruto" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search" aria-hidden="true"></i>PESQUISAR</button>
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search"
+                            aria-hidden="true"></i>PESQUISAR</button>
                 </form>
             </div>
         </nav>
 
         <!-- NOTICIAS -->
-        <div class="content" id="conteudo">
-            <div class="card mb-3">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <div class="card-columns">
-                        <div class="card">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title that wraps to a new line</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            </div>
-                        </div>
-                        <div class="card p-3">
-                            <blockquote class="blockquote mb-0 card-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                            </blockquote>
-                        </div>
-                        <div class="card">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            </div>
-                        </div>
-                        <div class="card bg-primary text-white text-center p-3">
-                            <blockquote class="blockquote mb-0">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
-                            </blockquote>
-                        </div>
-                        <div class="card text-center">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="..." class="card-img-top" alt="...">
-                        </div>
-                        <div class="card p-3 text-right">
-                            <blockquote class="blockquote mb-0">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                            </blockquote>
-                        </div>
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div class="content" id="conteudo"></div>
 
         <!-- COMENTÁRIO  -->
         <section class="coment">
@@ -120,21 +68,8 @@
 
         <!-- POSTS DOS COMENTÁRIOS FEITOS -->
         <section class="posts-coment">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="media">
-                                <img class="align-self-start mr-3 img-p" src="img/user.png" alt="Generic placeholder image">
-                                <div class="media-body">
-                                  <h5 class="mt-0" style="color: black;" id="name">Top-aligned media</h5>
-                                  <p id="texto">Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                                </div>
-                        </div>
-                                    
-                    </div>
-                </div>
+            <div class="card" id="posts"></div>
         </section>
-
-
 
         <!-- FOOTER / RODAPÉ -->
         <footer class="rodape">
@@ -142,14 +77,18 @@
 
                 <div class="col-md-5">
                     <div>
-                           <img src="img/noragami.png" alt="" sizes="" srcset="" class="rounded-circle img-p" style="float: left;">
-                           <p>Olá tudo bem? Meu nome Jully Silva, Estudante de Engenharia de Software. Muitos olham e não percebem que sou uma Otaku sem precedentes, tudo bem não me importo, para falar a verdade acho até divertido.</p> 
+                        <img src="img/noragami.png" alt="" sizes="" srcset="" class="rounded-circle img-p"
+                            style="float: left;">
+                        <p>Olá tudo bem? Meu nome Jully Silva, Estudante de Engenharia de Software. Muitos olham e não
+                            percebem que sou uma Otaku sem precedentes, tudo bem não me importo, para falar a verdade
+                            acho até divertido.</p>
                     </div>
                 </div>
 
 
                 <div class="col-md-2">
-                        <p class="text-justify">Venha participar desta equipe de Otakus e poste suas notícias, opiniões sobre o que acontece no mundo de animes e mangás. </p>
+                    <p class="text-justify">Venha participar desta equipe de Otakus e poste suas notícias, opiniões
+                        sobre o que acontece no mundo de animes e mangás. </p>
                 </div>
 
                 <div class="col-md-1">
@@ -164,21 +103,21 @@
                 <div class="col-md-4">
                     <div class="row">
 
-                            <div class="col-md-6 ">
-                                    <ul class="fa-ul pl-5 pr-0">
-                                        <li><a href="#"><i class="fa-li fa fa-facebook fa-fw fa-lg"></i>Facebook</a></li>
-                                        <li><a href="#"><i class="fa-li fa fa-instagram fa-fw fa-lg"> </i>Instagram</a></li>
-                                        <li><a href="#"><i class="fa-li fa fa-twitter fa-fw fa-lg"></i>Twitter</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-6">
-                                    <ul class="fa-ul">
-                                        <li><a href="#"><i class="fa-li fa fa-github fa-lg"></i>Github</a></li>
-                                        <li><a href="#"><i class="fa-li fa fa-whatsapp fa-lg"></i>Whatsapp</a></li>
-                                        <li><a href="#"><i class="fa-li fa fa-youtube fa-lg"></i>Youtube</a></li>
-                                    </ul>
-                                </div>
-                        
+                        <div class="col-md-6 ">
+                            <ul class="fa-ul pl-5 pr-0">
+                                <li><a href="#"><i class="fa-li fa fa-facebook fa-fw fa-lg"></i>Facebook</a></li>
+                                <li><a href="#"><i class="fa-li fa fa-instagram fa-fw fa-lg"> </i>Instagram</a></li>
+                                <li><a href="#"><i class="fa-li fa fa-twitter fa-fw fa-lg"></i>Twitter</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="fa-ul">
+                                <li><a href="#"><i class="fa-li fa fa-github fa-lg"></i>Github</a></li>
+                                <li><a href="#"><i class="fa-li fa fa-whatsapp fa-lg"></i>Whatsapp</a></li>
+                                <li><a href="#"><i class="fa-li fa fa-youtube fa-lg"></i>Youtube</a></li>
+                            </ul>
+                        </div>
+
                     </div>
 
                 </div>
@@ -187,16 +126,23 @@
 
     </div>
 
-    
-    
-    
+
+
+
     <script src="https://use.fontawesome.com/945e93a52c.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase.js"></script>
     <script src="js/script.js"></script>
 
 
 </body>
+
 </html>
