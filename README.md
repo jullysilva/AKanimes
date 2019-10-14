@@ -35,3 +35,11 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+##Wireframe de página principal do site
+
+![Home](https://user-images.githubusercontent.com/42702863/66725363-98f6be80-ee07-11e9-9ca1-ed511eb1d56e.png)
+
+##Wireframe da página de notícias específica do site
+
+![Noticia](https://user-images.githubusercontent.com/42702863/66725402-099ddb00-ee08-11e9-9391-998593190927.png)
