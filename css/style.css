@@ -10,8 +10,8 @@ nav, footer{
     background: #1b5dad;
 }
 .content {
-    max-height: 80%;
-    padding: 5% 15% 2% 15%;
+    max-height: 70%;
+    padding: 5% 25% 2% 25%;
 
 }
 .posts-coment{
@@ -45,6 +45,16 @@ nav, footer{
     width: 10%; 
     height: 10%;
 }
+<<<<<<< HEAD
+=======
+
+.card-rows img:hover{
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.3s;
+    filter: alpha(opacity=50);
+}
+>>>>>>> 5d13472213f4f026d2f22a528134b7660136617b
 
 nav i{
      color: #28a745;
