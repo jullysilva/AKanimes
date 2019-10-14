@@ -36,9 +36,15 @@ nav, footer{
 }
 
 .img-p{
-    width: 55px;
+    width: 70px;
 }
-
+.navbar-brand img{
+    width: 80%;
+}
+.col-md-5 img{
+    width: 10%; 
+    height: 10%;
+}
 
 nav i{
      color: #28a745;
