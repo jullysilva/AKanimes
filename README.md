@@ -1,42 +1,40 @@
-## Link para acesso ao AKanimes
+# AKanimes
 
-# https://jullysilva.github.io/AKanimes/
+🇧🇷 Português | [🇺🇸 English](README.en.md)
 
-You can use the [editor on GitHub](https://github.com/jullysilva/AKanimes/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Site de notícias sobre animes, com página inicial de destaques, página de notícia e área de comentários salva em tempo real no **Firebase**.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+🔗 **Acesse:** https://jullysilva.github.io/AKanimes/
 
-### Markdown
+## Funcionalidades
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+- Página inicial com notícias em destaque
+- Navegação entre home, notícias, contato e sobre
+- Formulário de comentários gravado no Firebase Realtime Database
 
-```markdown
-Syntax highlighted code block
+## Stack
 
-# Header 1
-## Header 2
-### Header 3
+- HTML5, CSS3 e JavaScript
+- Bootstrap 4.3
+- Firebase Realtime Database
+- GitHub Pages (hospedagem)
 
-- Bulleted
-- List
+## Estrutura
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+index.html     # Página principal
+css/style.css  # Estilos
+js/script.js   # Integração com o Firebase e comentários
+img/           # Imagens e logo
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Como rodar
 
-### Jekyll Themes
+Não precisa de build. Abra o `index.html` no navegador ou sirva a pasta localmente:
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jullysilva/AKanimes/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+```bash
+npx serve .
+```
 
 ## Wireframe de página principal do site
 
